@@ -21,11 +21,11 @@ const Header = () => {
 
                 <div>
                     <ul className='flex flex-col gap-1'>
-                        <li className='leading-[14px]'>
+                        <li>
                             <span className="mr-4 text-[10px]">01</span>
                             <a className="font-bold hover:text-[13px] hover:transition-all ease-in-out delay-50" href="#">sobre</a>
                         </li>
-                        <li className='leading-[14px]'>
+                        <li>
                             <span className="mr-4 text-[10px]">02</span>
                             <a className="font-bold hover:text-[13px] hover:transition-all ease-in-out delay-50" href="#">contato</a>
                         </li>
