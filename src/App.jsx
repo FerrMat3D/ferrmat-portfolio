@@ -1,24 +1,13 @@
-import { useState } from 'react'
+import { Header } from './components';
 
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
 
   return (
-    <>
-
-<div className="h-[200px] w-screen w-100 bg-blue-500">
-
-<div> 
-
-<h1> TESTE </h1>
-
-</div>
-
-</div>
-      
-    </>
+    <div className='bg-gray-100 py-8'>
+      <div className='container mx-auto px-xl'>
+        <Header />
+      </div>
+    </div>
   )
 }
-
-export default App
