@@ -13,4 +13,23 @@
     font-weight: 700;
     font-style: normal;
 }
+
+.perspective {
+    perspective: 1000px; /* Definindo a perspectiva */
+  }
+  
+  li {
+    transition: transform .4s; /* Adicionando uma transição suave */
+    transform-origin: right;
+    transform: rotateY(-20deg);
+  }
+  
+  li:hover {
+    transform: rotateY(-8deg); /* Aplicando uma rotação ao elemento quando o mouse passa por cima */
+  }
+  
+  .year {
+    text-align:right;
+
+  }
   

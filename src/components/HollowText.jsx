@@ -1,6 +1,9 @@
 import React from 'react';
 
-const HollowText = ({ text, color }) => {
+const HollowText = ({ text, color, size }) => {
+
+  const textSize = size
+
   const textStyle = {
     WebkitTextFillColor: 'transparent', // Torna o preenchimento do texto transparente
     WebkitTextStroke: color, // Define a cor da borda do texto
@@ -8,7 +11,7 @@ const HollowText = ({ text, color }) => {
   };
 
   return (
-    <h1 className="text-5xl cursor-pointer uppercase font-bold" style={textStyle} >
+    <h1 className={`text-${size} cursor-pointer uppercase font-bold `} style={textStyle} >
       {text}
     </h1>
   );
