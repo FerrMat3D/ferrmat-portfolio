@@ -1,24 +1,34 @@
-import { useState } from 'react'
+import { Header } from './components';
+import ListaProjetos from './components/ListaProjetos';
 
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
 
   return (
-    <>
+    <div className='bg-gray-100 py-8 quantico-regular'>
+      <div className='container mx-auto px-xl'>
+        <Header />
+      </div>
 
-<div className="h-[200px] w-screen w-100 bg-blue-500">
 
-<div> 
+      <div className='flex justify-items-end justify-end'>
 
-<h1> TESTE </h1>
+<div className="w-[20%] ">
 
 </div>
 
+  <div className="mr-4 w-[80%]">
+
+
+
+  <ListaProjetos/>
+
+  
+  </div>
+
+
 </div>
-      
-    </>
+
+    </div>
   )
 }
-
-export default App
