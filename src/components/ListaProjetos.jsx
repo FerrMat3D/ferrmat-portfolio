@@ -37,9 +37,9 @@ const ListaProjetos = () => {
           <div className='inline-block'>
             <p className="year flex text-left text-4xl text-blue-500">{projeto.ano}</p> 
             {hoveredItems[projeto.id] ? (
-              <HollowText text={<span dangerouslySetInnerHTML={{ __html: projeto.nome }} />} color="black" size="9xl"/>
+              <HollowText text={<span dangerouslySetInnerHTML={{ __html: projeto.nome }} />} color="black" size="9xl" fadefade={true}/>
             ) : (
-              <h1 className='text-9xl font-bold uppercase'>{projeto.nome}</h1>
+              <h1 className='text-9xl font-bold uppercase'><HollowText text={<span dangerouslySetInnerHTML={{ __html: projeto.nome }} />} color="black" size="9xl" fadefade={false}/></h1>
             )}
           </div>
         </li>

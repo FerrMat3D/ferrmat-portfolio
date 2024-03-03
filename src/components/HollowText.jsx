@@ -1,19 +1,27 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
-const HollowText = ({ text, color, size }) => {
-
-  const textSize = size
+const HollowText = ({ text, color, size, fadefade }) => {
 
   const textStyle = {
-    WebkitTextFillColor: 'transparent', // Torna o preenchimento do texto transparente
-    WebkitTextStroke: color, // Define a cor da borda do texto
-    WebkitTextStrokeWidth: '2px', // Define a largura da borda
+    WebkitTextStroke: color,
+    WebkitTextStrokeWidth: '2px',
   };
 
   return (
-    <h1 className={`text-${size} cursor-pointer uppercase font-bold `} style={textStyle} >
+    <motion.h1
+      className={`text-${size} cursor-pointer uppercase font-bold `}
+      style={textStyle}
+      initial={{
+        WebkitTextFillColor: fadefade ? '#000000' : '#f3f4f6' // Estado inicial
+      }}
+      animate={{
+        WebkitTextFillColor: fadefade ? '#f3f4f6' : '#000000' // Estado final
+      }}
+      transition={{ duration: fadefade ? 0.5 : 1, ease: "easeIn" }} // Transição suave
+    >
       {text}
-    </h1>
+    </motion.h1>
   );
 };
 
