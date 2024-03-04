@@ -26,7 +26,7 @@
   }
   
   li:hover {
-    transform: rotateY(-8deg); /* Aplicando uma rotação ao elemento quando o mouse passa por cima */
+    transform: rotateY(-8deg) scaleX(1.2); /* Aplicando uma rotação ao elemento quando o mouse passa por cima */
 
   }
   
