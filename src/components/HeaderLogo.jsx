@@ -22,11 +22,11 @@ const HeaderLogo = () => {
                 {isHovered ? (
                     <HollowText text={<span dangerouslySetInnerHTML={{ __html: "Ferrmat <br /> Studio" }} />} color="black"  size="6xl" fadefade={true}/>
                 ) : (
-                    <h1 className='text-6xl font-bold uppercase'>
+                    <span className='text-6xl font-bold uppercase'>
                       
                       <HollowText text={<span dangerouslySetInnerHTML={{ __html: "Ferrmat <br /> Studio" }} />} color="black"  size="6xl" fadefade={false}/>
 
-                    </h1>
+                    </span>
                 )}
             </div>
         </div>
