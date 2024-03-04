@@ -43,11 +43,14 @@ export function GreekStatue(props) {
   return (
     <group {...props} dispose={null}>
       <mesh
+       
+       
         castShadow
-        material={material}
+        material={material} 
+        position={[-15,0,0]}
         receiveShadow
         geometry={nodes.AnyConvcom__Sculpture_N181213.geometry}
-        rotation={[Math.PI, 0, Math.PI]}
+        rotation={[Math.PI, Math.PI , Math.PI]}
  >
       </mesh>
     </group>
