@@ -14,12 +14,12 @@ const ListaProjetos = () => {
 
   const projetos = [
     { id: 1, nome: "Gas-Station", ano: 2023 },
-    { id: 2, nome: "Portfolio WWW", ano: 2024 },
-    { id: 3, nome: "Projeto", ano: 2020 },
-    { id: 4, nome: "Ta Maluko", ano: 2022 },
+    { id: 2, nome: "Fatec Assis", ano: 2024 },
+    { id: 3, nome: "Gestão de T.I", ano: 2024 },
+    { id: 4, nome: "RL Italia", ano: 2022 },
     { id: 5, nome: "ThreeJS Game", ano: 2028 },
-    { id: 6, nome: "POPOPó", ano: 2025 },
-    { id: 7, nome: "SEIOQUELA", ano: 2026 },
+    { id: 6, nome: "Coming", ano: 2025 },
+    { id: 7, nome: "Soon", ano: 2026 },
 
     // Adicione mais objetos aqui conforme necessário
   ];
